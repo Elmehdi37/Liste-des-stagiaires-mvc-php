@@ -1,0 +1,14 @@
+// Créez une base de données nommée "ofppt"
+
+create database ofppt;
+
+// Créer une table nommée stagiaire
+
+create table stagiaire  (
+                            id int primary key auto_increment,
+                            nom varchar(25) not null,
+                            prenom varchar(25) not null,
+                            age int not null,
+                            login varchar(100) not null unique,
+                            password varchar(20) not null
+                        )
