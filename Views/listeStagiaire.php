@@ -5,6 +5,7 @@
     ob_start()
 ?>
 
+<a class="btn btn-primary m-2" href="create.php">Ajouter</a>
 <table class="table">
     <thead class="table-dark">
         <tr>
@@ -14,6 +15,7 @@
             <th scope="col">Age</th>
             <th scope="col">Login</th>
             <th scope="col">Password</th>
+            <th scope="col">Operation</th>
         </tr>
     </thead>
     <tbody>
@@ -25,6 +27,10 @@
                 <td scope="col"><?= $stagiaire->age      ?></td>
                 <td scope="col"><?= $stagiaire->login    ?></td>
                 <td scope="col"><?= $stagiaire->password ?></td>
+                <td scope="col">
+                    <a class="btn btn-success" href="#">Modifier</a>
+                    <a class="btn btn-danger" href="#">Supprimer</a>
+                </td>
             </tr>
         <?php }?>
     </tbody>

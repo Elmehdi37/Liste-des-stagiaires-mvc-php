@@ -8,7 +8,11 @@
     <title><?= $title ?></title>
 </head>
 <body>
-    <div class="container mt-2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="btn m-2" href="create.php" role="button">Ajouter Des Stagiaires</a>
+        <a class="btn m-2" href="index.php" role="button">Liste Des Stagiaires</a>
+    </nav>
+    <div class="container mt-2 ">
         <h1><?= $title ?></h1>
         <?= $content ?>
     </div>
